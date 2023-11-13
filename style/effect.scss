@@ -1,0 +1,804 @@
+.rating,
+.collection,
+.contacts,
+.form,
+.product,
+.hero {
+  &__btn:focus,
+  &__left-btn:focus,
+  &__price-buy:focus,
+  &__price-modal-content-btn:focus,
+  &__content-btn:focus {
+    background-color: #c998fb;
+    border: 2px solid #7033ac;
+  }
+
+  &__btn:hover,
+  &__left-btn:hover,
+  &__price-buy:hover,
+  &__price-modal-content-btn:hover,
+  &__content-btn:hover {
+    background-color: #c998fb;
+    border: 2px solid #c998fb;
+  }
+
+  &__btn:active,
+  &__left-btn:active,
+  &__price-buy:active,
+  &__price-modal-content-btn:active,
+  &__content-btn:active {
+    background-color: #7033ac;
+    border: 2px solid #7033ac;
+  }
+
+  &__btn:disabled,
+  &__left-btn:disabled,
+  &__price-buy:disabled,
+  &__price-modal-content-btn:disabled,
+  &__content-btn:disabled {
+    background-color: #eaeaea;
+    border: 2px solid #eaeaea;
+    color: #999999;
+  }
+}
+
+.rating .wrapper,
+.prototype .wrapper,
+.good,
+.sale {
+  &__item-btn:hover,
+  &__btn:hover,
+  &__card-btn:hover {
+    background-color: #a65cf0;
+    border: 2px solid #a65cf0;
+    color: #fff;
+  }
+
+  &__item-btn:focus,
+  &__btn:focus,
+  &__card-btn:focus {
+    background-color: #c998fb;
+    border: 2px solid #a65cf0;
+    color: #fff;
+  }
+
+  &__item-btn:active,
+  &__btn:active,
+  &__card-btn:active {
+    background-color: #7033ac;
+    border: 2px solid #7033ac;
+    color: #fff;
+  }
+}
+
+.header {
+  &__down-logo {
+    & a:hover {
+      opacity: 0.6;
+    }
+
+    & a:focus:not(:active) {
+      background-color: #c998fb;
+    }
+
+    & a:active {
+      background-color: #7033ac;
+    }
+  }
+
+  &__up {
+    &-phone:hover a {
+      color: #ffbd59;
+    }
+
+    &-phone:hover svg path {
+      fill: #ffbd59;
+    }
+
+    &-phone:focus:not(:active) a {
+      color: #ff862f;
+    }
+
+    &-phone:focus:not(:active) {
+      background-color: #fff5d1;
+    }
+
+    &-phone:focus:not(:active) svg path {
+      fill: #ff862f;
+    }
+
+    &-phone:active a {
+      color: #bb370e;
+    }
+
+    &-phone:active {
+      background-color: transparent;
+    }
+
+    &-phone:active svg path {
+      fill: #bb370e;
+    }
+  }
+
+  &__up-menu {
+    &--item:hover {
+      color: #a65cf0;
+    }
+
+    &--item:not(:active):focus {
+      color: #7033ac;
+      background-color: #ebd1ff;
+    }
+
+    &--item:active {
+      color: #7033ac;
+    }
+  }
+
+  &__down-nav {
+    &--link:hover {
+      color: #a65cf0;
+    }
+
+    &--link:not(:active):focus {
+      color: #333333;
+      background-color: #ebd1ff;
+    }
+
+    &--link:active {
+      color: #7033ac;
+    }
+  }
+
+  &__down-category {
+    &--btn:hover {
+      border: 2px solid #a65cf0;
+    }
+
+    &--btn:not(:active):focus {
+      border: 2px solid #a65cf0;
+      background-color: #f8efff;
+    }
+
+    &--btn:active {
+      border: 2px solid #7033ac;
+    }
+
+    &--item a:hover {
+      color: #a65cf0;
+    }
+
+    &--item a:not(:active):focus {
+      color: #a65cf0;
+    }
+
+    &--item a:hover {
+      color: #7033ac;
+    }
+  }
+
+  &__down-wrapper {
+    &--basket:hover svg path[data-path="1"],
+    &--client:hover svg path {
+      fill: #c998fb;
+    }
+
+    &--basket:focus:not(:active) svg path,
+    &--client:focus:not(:active) svg path {
+      fill: #ffffff;
+    }
+
+    &--basket:focus:not(:active),
+    &--client:focus:not(:active) {
+      background-color: #c998fb;
+    }
+
+    &--basket:active svg path[data-path="1"],
+    &--client:active svg path {
+      fill: #7033ac;
+    }
+
+    &--basket:active,
+    &--client:active {
+      background-color: transparent;
+    }
+  }
+
+  &__down-search {
+    &--input:hover {
+      background-color: #eaeaea;
+    }
+
+    &--input:focus:not(:active) {
+      border: 2px solid #a65cf0;
+      background-color: #f8efff;
+    }
+
+    &--input:active {
+      border: 2px solid #f7f7f7;
+      background-color: #f7f7f7;
+    }
+
+    &--input:active + &--icon svg path {
+      fill: #a65cf0;
+    }
+  }
+
+  .good-button-next:hover svg circle,
+  .sale-button-next:hover svg circle,
+  &__down-search--btn:hover svg circle {
+    fill: #a65cf0;
+  }
+
+  .good-button-next:hover svg path,
+  .sale-button-next:hover svg path,
+  &__down-search--btn:hover svg path {
+    stroke: #ffffff;
+  }
+
+  .good-button-next:focus:not(:active) svg circle,
+  .sale-button-next:focus:not(:active) svg circle,
+  &__down-search--btn:focus:not(:active) svg circle {
+    stroke: #a65cf0;
+    fill: #c998fb;
+  }
+
+  .good-button-next:focus:not(:active) svg path,
+  .sale-button-next:focus:not(:active) svg path,
+  &__down-search--btn:focus:not(:active) svg path {
+    stroke: #ffffff;
+  }
+
+  .good-button-next:active svg circle,
+  .sale-button-next:active svg circle,
+  &__down-search--btn:active svg circle {
+    stroke: #7033ac;
+    fill: #7033ac;
+  }
+
+  .good-button-next:active svg path,
+  .sale-button-next:active svg path,
+  &__down-search--btn:active svg path {
+    stroke: #ffffff;
+  }
+}
+
+.breadcrumps {
+  &__text:hover {
+    color: #c998fb;
+  }
+
+  &__text:focus:not(:active) {
+    background-color: #ebd1ff;
+  }
+
+  &__text:active {
+    color: #7033ac;
+  }
+}
+
+.product {
+  &__price-modal {
+    &-content {
+      &-iconx:hover path {
+        fill: #a65cf0;
+      }
+
+      &-iconx:focus:not(:active) {
+        background-color: #ebd1ff;
+      }
+
+      &-iconx:focus:not(:active) path {
+        fill: #7033ac;
+      }
+
+      &-iconx:active {
+        background-color: transparent;
+      }
+
+      &-iconx:active path {
+        fill: #7033ac;
+      }
+    }
+
+    &-content {
+      &-input:hover {
+        background-color: #eaeaea;
+      }
+
+      &-input:focus:not(:active) {
+        background-color: #f8efff;
+        border: 1px solid #a65cf0;
+      }
+
+      &-input:active {
+        background-color: #f6f6f6;
+        border: 1px solid #b8ec64;
+      }
+    }
+  }
+
+  &__wrapper {
+    &-iconx:hover path {
+      fill: #a65cf0;
+    }
+
+    &-iconx:focus:not(:active) {
+      background-color: #ebd1ff;
+    }
+
+    &-iconx:focus:not(:active) path {
+      fill: #7033ac;
+    }
+
+    &-iconx:active {
+      background-color: transparent;
+    }
+
+    &-iconx:active path {
+      fill: #7033ac;
+    }
+  }
+
+  &__price {
+    &-basket:hover {
+      color: #c998fb;
+    }
+
+    &-basket:focus:not(:active) {
+      color: #7033ac;
+      background-color: #c998fb;
+    }
+
+    &-basket:active {
+      color: #7033ac;
+      background-color: transparent;
+    }
+  }
+}
+
+.aside .filter {
+  &__color {
+    &-link:hover {
+      border-bottom: 1px solid #a65cf0;
+    }
+
+    &-link:focus:not(:active) {
+      color: #ffffff;
+      background-color: #c998fb;
+    }
+
+    &-link:active {
+      color: #7033ac;
+      border-bottom: 1px solid #7033ac;
+    }
+  }
+
+  &__categorys {
+    &-other:hover {
+      border-bottom: 1px solid #a65cf0;
+    }
+
+    &-other:focus:not(:active) {
+      color: #ffffff;
+      background-color: #c998fb;
+    }
+
+    &-other:active {
+      color: #7033ac;
+      border-bottom: 1px solid #7033ac;
+    }
+  }
+
+  &__price {
+    &-input:hover {
+      border: 1px solid #a65cf0;
+    }
+
+    &-input:focus:not(:active) {
+      border: 1px solid #a65cf0;
+      background-color: #ebd1ff;
+    }
+
+    &-input:active {
+      border: 1px solid #7033ac;
+    }
+  }
+}
+
+.rating {
+  &__btn:hover a {
+    border: 2px solid #a65cf0;
+    background-color: #a65cf0;
+    color: #ffffff;
+  }
+
+  &__btn:focus:not(:active) a {
+    border: 2px solid #a65cf0;
+    background-color: #c998fb;
+    color: #ffffff;
+  }
+
+  &__btn:active a {
+    border: 2px solid #7033ac;
+    background-color: #7033ac;
+    color: #ffffff;
+  }
+}
+
+.collection {
+  &__content-link:hover svg circle {
+    fill: #a65cf0;
+  }
+
+  &__content-link:hover svg path {
+    stroke: #333;
+  }
+
+  &__content-link:hover .collection__link {
+    border-bottom: 2px solid #a65cf0;
+  }
+
+  &__content-link:focus:not(:active) svg circle {
+    stroke: #a65cf0;
+    fill: #c998fb;
+  }
+
+  &__content-link:focus:not(:active) svg path {
+    stroke: #333;
+  }
+
+  &__content-link:focus:not(:active) .collection__link {
+    border-bottom: 2px solid #a65cf0;
+  }
+
+  &__content-link:active svg circle {
+    stroke: #7033ac;
+    fill: #7033ac;
+  }
+
+  &__content-link:active svg path {
+    stroke: #333;
+  }
+
+  &__content-link:active .collection__link {
+    border-bottom: 2px solid #7033ac;
+    color: #7033ac;
+  }
+}
+
+.contacts {
+  &__input:hover {
+    background-color: #eaeaea;
+  }
+
+  &__input:focus:not(:active) {
+    background-color: #f8efff;
+    border: 1px solid #a65cf0;
+  }
+
+  &__input:active {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+  }
+}
+
+.form {
+  &__left {
+    &-input:hover {
+      background-color: #eaeaea;
+    }
+
+    &-input:focus:not(:active) {
+      background-color: #f8efff;
+      border: 1px solid #a65cf0;
+    }
+
+    &-input:active {
+      background-color: #f6f6f6;
+      border: 1px solid #b8ec64;
+    }
+  }
+
+  &__left {
+    &-link:hover {
+      color: #c998fb;
+    }
+
+    &-link:focus:not(:active) {
+      background-color: #c998fb;
+      color: #ffffff;
+    }
+
+    &-link:active {
+      background-color: transparent;
+      color: #7033ac;
+    }
+  }
+
+  &__tooltip {
+    &-wrapper:hover .form__tooltip-icon {
+      display: none;
+    }
+
+    &-wrapper:hover .form__tooltip-icon1 {
+      display: inherit;
+    }
+
+    &-wrapper:hover ~ .form__tooltip-span,
+    &-wrapper:hover ~ .form__tooltip-text {
+      opacity: 1;
+    }
+  }
+}
+
+.filter {
+  &__color-input:hover ~ .filter__color-text,
+  &__sale-input:hover ~ .filter__sale-text,
+  &__categorys-input:hover ~ .filter__categorys-text {
+    color: #c998fb;
+  }
+
+  &__color-input:hover ~ .filter__color-span,
+  &__sale-input:hover ~ .filter__sale-span,
+  &__categorys-input:hover ~ .filter__categorys-span {
+    border: 2px solid #c998fb;
+  }
+
+  &__color-input:focus ~ .filter__color-text,
+  &__sale-input:focus ~ .filter__sale-text,
+  &__categorys-input:focus ~ .filter__categorys-text {
+    color: #a65cf0;
+  }
+
+  &__color-input:focus ~ .filter__color-span,
+  &__sale-input:focus ~ .filter__sale-span,
+  &__categorys-input:focus ~ .filter__categorys-span {
+    border: 2px solid #a65cf0;
+  }
+
+  &__color-input:active ~ .filter__color-text,
+  &__sale-input:active ~ .filter__sale-text,
+  &__categorys-input:active ~ .filter__categorys-text {
+    color: #7033ac;
+  }
+
+  &__color-input:active ~ .filter__color-span,
+  &__sale-input:active ~ .filter__sale-span,
+  &__categorys-input:active ~ .filter__categorys-span {
+    border: 2px solid #7033ac;
+  }
+}
+
+.footer {
+  &__logo {
+    & a:hover {
+      opacity: 0.6;
+    }
+
+    & a:focus:not(:active) {
+      background-color: #c998fb;
+    }
+
+    & a:active {
+      background-color: #7033ac;
+    }
+  }
+
+  &__social-svg:hover svg path {
+    fill: #a65cf0;
+  }
+
+  &__social-svg:focus:not(:active) {
+    background-color: #c998fb;
+  }
+
+  &__social-svg:focus:not(:active) svg path {
+    fill: #ffffff;
+  }
+
+  &__social-svg:active svg path {
+    fill: #7033ac;
+  }
+
+  &__content {
+    &-title a:hover {
+      color: #a65cf0;
+    }
+
+    &-title a:focus:not(:active) {
+      color: #7033ac;
+      background-color: #ebd1ff;
+    }
+
+    &-title a:active {
+      color: #7033ac;
+    }
+  }
+}
+
+.categorys__card-wrapper:hover svg circle,
+.good-button-next:hover svg circle,
+.good-button-prev:hover svg circle,
+.sale-button-prev:hover svg circle,
+.sale-button-next:hover svg circle,
+.product-button-next:hover svg circle,
+.product-button-prev:hover svg circle,
+.prototype-button-prev:hover svg circle,
+.prototype-button-next:hover svg circle {
+  fill: #a65cf0;
+  stroke: #a65cf0;
+}
+
+.categorys__card-wrapper:hover svg path,
+.good-button-next:hover svg path,
+.good-button-prev:hover svg path,
+.sale-button-prev:hover svg path,
+.sale-button-next:hover svg path,
+.product-button-next:hover svg path,
+.product-button-prev:hover svg path,
+.prototype-button-prev:hover svg path,
+.prototype-button-next:hover svg path {
+  stroke: #ffffff;
+}
+
+.categorys__card-wrapper:hover .categorys__card-link {
+  border-bottom: 2px solid #a65cf0;
+}
+
+.categorys__card-wrapper:focus:not(:active) svg circle,
+.good-button-next:focus:not(:active) svg circle,
+.good-button-prev:focus:not(:active) svg circle,
+.sale-button-prev:focus:not(:active) svg circle,
+.sale-button-next:focus:not(:active) svg circle,
+.product-button-next:focus:not(:active) svg circle,
+.product-button-prev:focus:not(:active) svg circle,
+.prototype-button-prev:focus:not(:active) svg circle,
+.prototype-button-next:focus:not(:active) svg circle {
+  stroke: #a65cf0;
+  fill: #c998fb;
+}
+
+.categorys__card-wrapper:focus:not(:active) svg path,
+.good-button-next:focus:not(:active) svg path,
+.good-button-prev:focus:not(:active) svg path,
+.sale-button-prev:focus:not(:active) svg path,
+.sale-button-next:focus:not(:active) svg path,
+.product-button-next:focus:not(:active) svg path,
+.product-button-prev:focus:not(:active) svg path,
+.prototype-button-prev:focus:not(:active) svg path,
+.prototype-button-next:focus:not(:active) svg path {
+  stroke: #ffffff;
+}
+
+.categorys__card-wrapper:focus:not(:active) .categorys__card-link {
+  border-bottom: 2px solid #a65cf0;
+}
+
+.categorys__card-wrapper:active svg circle,
+.good-button-next:active svg circle,
+.good-button-prev:active svg circle,
+.sale-button-prev:active svg circle,
+.sale-button-next:active svg circle,
+.product-button-next:active svg circle,
+.product-button-prev:active svg circle,
+.prototype-button-prev:active svg circle,
+.prototype-button-next:active svg circle {
+  stroke: #7033ac;
+  fill: #7033ac;
+}
+
+.categorys__card-wrapper:active svg path,
+.good-button-next:active svg path,
+.good-button-prev:active svg path,
+.sale-button-prev:active svg path,
+.sale-button-next:active svg path,
+.product-button-next:active svg path,
+.product-button-prev:active svg path,
+.prototype-button-prev:active svg path,
+.prototype-button-next:active svg path {
+  stroke: #ffffff;
+}
+
+.good-button-next:disabled svg circle,
+.good-button-prev:disabled svg circle,
+.sale-button-prev:disabled svg circle,
+.sale-button-next:disabled svg circle,
+.product-button-next:disabled svg circle,
+.product-button-prev:disabled svg circle,
+.prototype-button-prev:disabled svg circle,
+.prototype-button-next:disabled svg circle {
+  stroke: #999999;
+  fill: #ffffff;
+}
+
+.good-button-next:disabled svg path,
+.good-button-prev:disabled svg path,
+.sale-button-prev:disabled svg path,
+.sale-button-next:disabled svg path,
+.product-button-next:disabled svg path,
+.product-button-prev:disabled svg path,
+.prototype-button-prev:disabled svg path,
+.prototype-button-next:disabled svg path {
+  stroke: #999999;
+}
+
+.good-button-next:disabled svg,
+.good-button-prev:disabled svg,
+.sale-button-prev:disabled svg,
+.sale-button-next:disabled svg,
+.product-button-next:disabled svg,
+.product-button-prev:disabled svg,
+.prototype-button-prev:disabled svg,
+.prototype-button-next:disabled svg {
+  fill: #ffffff;
+}
+
+.categorys__card-wrapper:active .categorys__card-link {
+  border-bottom: 2px solid #7033ac;
+  color: #7033ac;
+}
+
+.noUi-horizontal .noUi-handle:hover {
+  border-bottom: 13px solid #c998fb;
+}
+
+.noUi-horizontal .noUi-handle:focus {
+  border-bottom: 13px solid #7033ac;
+}
+
+.noUi-horizontal .noUi-handle:active {
+  border-bottom: 13px solid #7033ac;
+}
+
+.hero .swiper-pagination-bullet:hover {
+  background-color: #7033ac;
+  opacity: 1;
+}
+
+.hero .swiper-pagination-bullet:focus {
+  border: 2px solid #7033ac;
+  background-color: #c998fb;
+  opacity: 1;
+}
+
+.swiper-button-disabled svg path {
+  stroke: #999999;
+}
+
+.swiper-button-disabled svg circle {
+  stroke: #999999;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:hover,
+.choices:hover .choices__list--single .choices__item {
+  color: #c998fb;
+}
+
+.choices:hover ~ svg path {
+  fill: #c998fb;
+}
+
+.choices:not(:active):focus {
+  background-color: #ebd1ff;
+}
+
+.choices:not(:active):focus .choices__list--single .choices__item {
+  color: #7033ac;
+}
+
+.choices__list--dropdown .choices__item--selectable:focus.is-highlighted {
+  color: #7033ac;
+}
+
+.choices:not(:active):focus ~ svg path {
+  fill: #7033ac;
+}
+
+.choices:active .choices__list--single .choices__item {
+  color: #7033ac;
+}
+
+.choices:active ~ svg path {
+  fill: #7033ac;
+}
